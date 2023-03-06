@@ -6,6 +6,7 @@ startButton.addEventListener('click',
 function() {
     const randomNumbersContainer = document.getElementById('random-numbers-container');
     const randomNumbers = [];
+    const timer = document.getElementById('timer')
     const correctNumbers = [];
 
     randomNumbersContainer.innerHTML = '';
@@ -17,5 +18,19 @@ function() {
         element.innerText = randomNumber;
         randomNumbersContainer.append(element);
     }
+    
     console.log(randomNumbers);
+
+    let i = 29;
+
+    const time = setInterval(function() {
+        
+            if (i !== 0) {
+                timer.innerHTML = i;
+                i--;
+            } else {
+                timer.innerHTML = `Fine del tempo`;
+                clearInterval(time);
+            }
+    }, 1000)
 })
