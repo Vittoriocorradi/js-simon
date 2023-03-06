@@ -12,21 +12,97 @@ RESET
 
 /*
 --------
+TYPO
+--------
+*/
+
+body {
+    color: #feffec;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-decoration: underline;
+    margin-bottom: 1.875rem;
+}
+
+.rules p:first-of-type {
+    font-size: 1.5em;
+}
+
+.big-container > p {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: .625rem;
+}
+
+#correct-numbers-msg {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/*
+--------
 MAIN
 --------
 */
 
+body {
+    background-color: #1b2838;
+    height: 100vh;
+    padding-top: 5rem;
+
+}
+
 .big-container {
     max-width: 62rem;
     margin: 0 auto;
-    background-color: bisque;
     text-align: center;
+    padding-bottom: 3.125rem;
+}
+
+.rules {
+    border: .125rem dashed #eee;
+    padding: 1.875rem;
+    margin-bottom: 3.75rem;
+}
+
+#start-game {
+    font-size: 1.2em;
+    padding: .625rem 1.875rem;
+    font-family: inherit;
+    font-weight: 700;
+    color: #1b2838;
+    border-radius: .5rem;
+    background-color: #feffec;
+    margin-bottom: 3.125rem;
 }
 
 .container {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #feffec;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8em;
+    height: 3.75rem;
+    border-radius: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+#timer {
+    font-size: 3em;
+    font-weight: 700;
 }
 
 .hidden {

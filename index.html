@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <title>Simon Says</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -11,15 +16,21 @@
 <body>
     <div class="big-container">
         <h1>Simon Says</h1>
-        <h2>Regole</h2>
-        <p>Avrai 30 secondi per memorizzare i numeri che compariranno sullo schermo. Quando richiesto scrivi i numeri che ti ricordi. Vediamo quanti riuscirai a ricorartene!</p>
-        <button id="start-game">Premi qui per incominciare il gioco</button>
-        <div class="container" id="random-numbers-container"></div>
+        <div class="rules">
+            <h2>Regole</h2>
+            <p>Avrai 30 secondi per memorizzare i numeri che compariranno sullo schermo. Quando richiesto scrivi i numeri che ti ricordi. Vediamo quanti riuscirai a ricordartene!</p>
+        </div>  
+        <button id="start-game">Clicca qui per incominciare il gioco</button>
+        <div class="container hidden" id="random-numbers-container"></div>
         <div id="timer"></div>
-        <p class="hidden" id="numbers-title">Ecco i numeri che hai scritto</p>
-        <div class="container" id="user-numbers-container"></div>
-        <p class="hidden" id="numbers-title">Ecco i numeri che ti sei ricordato!</p>
-        <div class="container" id="correct-numbers-container"></div>
+        <p class="hidden" id="numbers-title">
+            Ecco i numeri che hai scritto
+        </p>
+        <div class="container hidden" id="user-numbers-container"></div>
+        <p class="hidden" id="numbers-title">
+            Ecco i numeri che ti sei ricordato!
+        </p>
+        <div class="container hidden" id="correct-numbers-container"></div>
         <div id="correct-numbers-msg"></div>
         <script src="js/main.js"></script>
     </div>   
