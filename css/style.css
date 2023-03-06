@@ -10,10 +10,25 @@ RESET
     box-sizing: border-box;
 }
 
-.container {
+/*
+--------
+MAIN
+--------
+*/
+
+.big-container {
     max-width: 62rem;
     margin: 0 auto;
     background-color: bisque;
+    text-align: center;
+}
+
+.container {
+    
     display: flex;
     justify-content: space-between;
+}
+
+.hidden {
+    visibility: hidden;
 }
