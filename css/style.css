@@ -9,3 +9,11 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 62rem;
+    margin: 0 auto;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}

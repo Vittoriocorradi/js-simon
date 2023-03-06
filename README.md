@@ -9,6 +9,7 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 ESERCIZIO
 
 
+Inizio il gioco al premere di un bottone
 Creo un array randomNumbers vuoto
 Creo un array correctNumbers vuoto
 Uso un ciclo per pushare cinque numeri casuali dentro randomNumbers e creare cinque div da appendere a un container
